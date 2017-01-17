@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/category/category",
+    "pages/categorylist/categorylist",
+    "pages/cookdetail/cookdetail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#393A3E",
+    "navigationBarTitleText": "掌中菜谱",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/category/category",
+      "text": "菜谱分类",
+      "iconPath": "pages/images/ic_category.png",
+      "selectedIconPath": "pages/images/ic_category_selected.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "菜谱分类",
+      "iconPath": "pages/images/ic_category.png",
+      "selectedIconPath": "pages/images/ic_category_selected.png"
+    }]
+  }
+}

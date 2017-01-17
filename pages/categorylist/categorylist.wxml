@@ -1,0 +1,20 @@
+<template name="category-list-item">
+    <view class="list-item" bindtap="handleCategoryListItemClick" data-item="{{menuId}}">
+        <block wx:if="{{thumbnail != null}}">
+            <image src="{{thumbnail}}" class="list-item-thumbnail" binderror="imageError"></image>
+        </block>
+        <block wx:else>
+            <image src="../images/empty.png" mode="aspectFit" class="list-item-thumbnail"></image>
+        </block>
+        
+        <view class="list-item-info">
+            <text class="list-item-title">{{name}}</text>
+            <text class="list-item-types">{{ctgTitles}}</text>
+        </view>
+    </view>
+    <view class="divider"></view>
+</template>
+
+<view wx:for="{{categoryList}}">
+    <template is="category-list-item" data="{{...item}}"></template>
+</view>

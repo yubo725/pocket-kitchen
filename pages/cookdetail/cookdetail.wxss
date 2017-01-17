@@ -1,0 +1,41 @@
+.content {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.ingredients {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.ingredients-inner {
+    margin: 10px;
+}
+
+.cookdetail-img {
+    width: 100%;
+    border-radius: 5px;
+}

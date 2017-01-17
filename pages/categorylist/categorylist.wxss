@@ -1,0 +1,37 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+}
+
+.list-item:active {
+    background-color: #e8e8e8
+}
+
+.list-item-thumbnail {
+    width: 91px;
+    height: 67px;
+}
+
+.list-item-info {
+    flex: 1;
+    display: flex;
+    margin-left: 3px;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-item-title {
+    font-weight: bold;
+}
+
+.list-item-types {
+    margin-top: 5px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcdc;
+}

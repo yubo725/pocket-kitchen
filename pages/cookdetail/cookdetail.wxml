@@ -1,0 +1,28 @@
+<view class="content">
+    <text class="title">{{title}}</text>
+    <view class="divider"></view>
+    <view class="ingredients">
+        <view class="ingredients-inner">
+            <text class="text-bold">简介：\n</text>
+            <text class="ingredients-text">{{summary}}</text>
+        </view>
+    </view>
+    <block wx:if="{{image !== null}}">
+        <image src="{{image}}" class="cookdetail-img"></image>
+    </block>
+    <block wx:else>
+        <image src="../images/empty_img.jpg" class="cookdetail-img"></image>
+    </block>
+    <view class="ingredients">
+        <view class="ingredients-inner">
+            <text class="text-bold">原料：\n</text>
+            <text class="ingredients-text">{{ingredients}}</text>
+        </view>
+    </view>
+    <view class="ingredients">
+        <view class="ingredients-inner">
+            <text class="text-bold">做法：\n</text>
+            <text class="ingredients-text">虾仁350g、油1大勺、盐1小勺、白酒1小勺、淀粉2小勺、黄瓜30g、胡萝卜30g、玉米粒30g</text>
+        </view>
+    </view>
+</view>

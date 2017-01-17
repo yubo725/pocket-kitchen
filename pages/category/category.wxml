@@ -1,0 +1,27 @@
+<template name="category">
+    <view class="category {{index % 4 == 0 ? 'category-red' : (index % 4 == 1 ? 'category-blue' : (index % 4 == 2 ? 'category-yellow' : (index % 4 == 3 ? 'category-green' : '')))}}">
+        <view class="category-name">
+            <text class="category-name-text">{{categoryInfo.name}}</text>
+        </view>
+        <view class="h-divider"></view>
+        <view class="category-items">
+            <block wx:for="{{childs}}">
+                <view class="category-row">
+                    <block wx:for="{{item}}" wx:for-index="idx">
+                        <text class="category-item" bindtap="handleCategoryItemClick" data-category="{{item.categoryInfo}}">{{item.categoryInfo.name}}</text>
+                        <block wx:if="{{idx % 4 != 3}}">
+                            <view class="v-divider"></view>
+                        </block>
+                    </block>
+                </view>
+                <block wx:if="{{index != childs.length - 1}}">
+                    <view class="h-divider"></view>
+                </block>
+            </block>
+        </view>
+    </view>
+</template>
+
+<view wx:for="{{categoryData}}" wx:for-index="idx">
+    <template is="category" data="{{...item, index: idx}}"></template>
+</view>
