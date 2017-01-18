@@ -20,9 +20,9 @@
       "selectedIconPath": "pages/images/ic_category_selected.png"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "菜谱分类",
-      "iconPath": "pages/images/ic_category.png",
-      "selectedIconPath": "pages/images/ic_category_selected.png"
+      "text": "菜谱搜索",
+      "iconPath": "pages/images/ic_search.png",
+      "selectedIconPath": "pages/images/ic_search_selected.png"
     }]
   }
 }
